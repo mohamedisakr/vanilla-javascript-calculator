@@ -1,6 +1,11 @@
-http-server -c-1
+### http-server -c-1
 
-### ### User Story #1:
+# Bug Report
+
+1. When executing multiple calaculation, no result displayed and an error message displayed "VM2482:1 Uncaught SyntaxError: Unexpected token '\*' at HTMLButtonElement.<anonymous>"
+2. Divide by zero
+
+### User Story #1:
 
 My calculator should contain a clickable element containing an = (equal sign) with a corresponding id="equals".
 
