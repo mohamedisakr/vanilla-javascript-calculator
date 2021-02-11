@@ -41,6 +41,8 @@ body {
   grid-column: 1 / -1;
   /* background-color:  rgba(0, 0, 0, .75); */
   background-color: whitesmoke;
+  font-weight: bold;
+  font-size: xx-large;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
