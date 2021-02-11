@@ -24,6 +24,8 @@ const operationButtons = document.querySelectorAll("[data-operation]");
 let result = 0;
 let inputs = [];
 
+init();
+
 function init() {
   displayButton.textContent = 0;
   inputs = [];
@@ -33,9 +35,8 @@ function init() {
 function typeOnDisplay(e) {
   inputs.push(e.target.textContent);
   displayButton.textContent = inputs.join("");
+  console.log(inputs);
 }
-
-init();
 
 numberButtons.forEach((button) => {
   button.addEventListener("click", typeOnDisplay);
@@ -60,15 +61,17 @@ deleteButton.addEventListener("click", (e) => {
 
 // Cannot divide by zero
 equalsButton.addEventListener("click", (e) => {
-  try {
-    result = eval(buffer);
-  } catch (error) {
-    // alert(error);
-  }
-
+  result = eval(inputs.join(""));
   displayButton.textContent = result;
   // buffer = ``;
   inputs = [];
+});
+
+// attach page with Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Esc" || e.key === "Escape") {
+    init();
+  }
 });
 
 /*
