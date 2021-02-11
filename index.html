@@ -6,17 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Calculator</title>
   <link href="styles.css" rel="stylesheet">
-  <script src="script.js" defer></script>
+  
 </head>
 <body>
   <div class="calculator-grid">
     <div id="display" class="output">
       <div data-previous-operand class="previous-operand"></div>
       <div data-current-operand class="current-operand"></div>
-    </div>
-    <!--  id="add", id="subtract", id="multiply", id="divide". -->
+    </div>    
     <button id="clear" data-all-clear class="span-two">AC</button>
-    <button data-delete>DEL</button>
+    <button id="delete" data-delete>DEL</button>
     <button id="divide" data-operation>÷</button>
     <button id="one" data-number>1</button>
     <button id="two" data-number>2</button>
@@ -34,5 +33,6 @@
     <button id="zero" data-number>0</button>
     <button id="equals" data-equals class="span-two">=</button>
   </div>
+  <script src="script.js" defer></script>
 </body>
 </html>
