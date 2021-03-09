@@ -1,5 +1,11 @@
 ### http-server -c-1
 
+# Resources
+
+1. freecodecamp.org
+2. Build A Calculator With JavaScript Tutorial
+   https://www.youtube.com/watch?v=j59qQ7YWLxw
+
 # Bug Report
 
 1. When executing multiple calaculation, no result displayed and an error message displayed "VM2482:1 Uncaught SyntaxError: Unexpected token '\*' at HTMLButtonElement.<anonymous>"
